@@ -119,6 +119,14 @@ footer {
     main {
         flex: 1;
     }
+    section {
+        max-width: 80rch;
+    }
+
+    .AnalisisHeading {
+        margin-top: 10;
+    }
+
     aside {
         flex: 0;
     }
