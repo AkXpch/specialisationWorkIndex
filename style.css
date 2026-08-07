@@ -8,24 +8,24 @@
 :root{
     /* basic 2-bit palette from 1bit Monitor Glow Palette by Polyducks */
     /* https://lospec.com/palette-list/1bit-monitor-glow */
-    --colour-1: #222323;
-    --colour-2: #f0f6f0;
+    --colour-text: #6f1a00;
+    --colour-bg: #fcd6db;
 }
 
 /* this swaps the colour order to account for user's OS dark mode */
 /*!!!!!*/
 /*remember to update the colours here too to reflect the above changes*/
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
     :root{
-        --colour-1: #f0f6f0;
-        --colour-2: #222323;
+        --colour-text: #6f1a00;
+        --colour-bg: #fcd6db;
     }
 }
 
 
 body {
-    background-color: var(--colour-2);
-    color: var(--colour-1);
+    background-color: var(--colour-bg);
+    color: var(--colour-text);
     font-family: 'Work Sans', sans-serif;
     line-height: 1.5;
     padding: 1rem;
