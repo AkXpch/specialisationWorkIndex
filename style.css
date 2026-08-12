@@ -59,20 +59,22 @@ nav {
     align-items: flex-end;
 }
 
+
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
 
+/* table frame(line) */
 td, th {
-  border: 1px solid #dddddd;
+  border: 3px solid #450707;
   text-align: left;
   padding: 8px;
 }
-
+/*table bg */
 tr:nth-child(even) {
-  background-color: #dddddd;
+  background-color: #fc94a1;
 }
 
 main {
