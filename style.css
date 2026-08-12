@@ -22,6 +22,10 @@
     }
 }
 
+p {
+    margin-bottom: 20px;
+}
+
 
 body {
     background-color: var(--colour-bg);
@@ -53,6 +57,22 @@ nav {
     min-width: fit-content;
     flex: 1;
     align-items: flex-end;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
 }
 
 main {
