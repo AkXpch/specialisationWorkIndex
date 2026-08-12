@@ -77,6 +77,11 @@ tr:nth-child(even) {
   background-color: #fc94a1;
 }
 
+img {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
 main {
     display: flex;
     flex-direction: column;
