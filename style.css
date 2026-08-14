@@ -194,6 +194,10 @@ footer {
     section {
         max-width: 80rch;
     }
+    
+    figure {
+    text-align: center;
+    }
 
     .AnalisisHeading {
         margin-top: 10;
