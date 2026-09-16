@@ -36,12 +36,14 @@ body {
 
 
 
+
 .background {
     /*need this to make layer event info work*/
     position: relative;
     margin: auto;
     height: 600px;
     display: block;
+    z-index: 1;
 
    
 }
@@ -51,17 +53,101 @@ body {
     border: none;
     background: none;
     padding: 0;
+    filter: drop-shadow(3px 3px 5px var(--colour-05));
 }
+/*Kitchen Sticker*/
 
-.sticker img[alt="kettle"] {
-    width: 100px;
+/*Bottom Carbinate*/
+.bottom-cabinate img {
+    width: 185px;
     height: auto;
-    top: 100px;
 }
 
-main {
-    
+.bottom-cabinate {
+    left: 148px;
+    top: 489px;
 }
+
+/*cups*/
+.cups img {
+    width: 65px;
+    height: auto;
+}
+
+.cups {
+    left: 218px;
+    top: 214px;
+}
+/*fridge*/
+.fridge img {
+    width: 200px;
+    height: auto;
+}
+
+.fridge {
+    right: -209px;
+    top: 290px;
+}
+
+/*Kettle*/
+.kettle img {
+    width: 113px;
+    height: auto;
+}
+
+.kettle {
+    left: 22px;
+    top: 377px;
+}
+
+/*oven*/
+.oven img {
+    width: 188px;
+    height: auto;
+}
+
+.oven {
+    left: -3px;
+    top: 487px;
+}
+
+/*plates*/
+.plates img {
+    width: 110px;
+    height: auto;
+}
+
+.plates {
+    right: 8px;
+    top: 240px;
+}
+
+/*sink*/
+.sink img {
+    width: 199px;
+    height: auto;
+}
+
+.sink {
+    right: -51px;
+    top: 374px;
+}
+
+/*smoke vacume*/
+.smoke-vacume img {
+    width: 188px;
+    height: auto;
+}
+
+.smoke-vacume {
+    left: -1px;
+    top: 101px;
+}
+
+
+
+
+
 
 
 

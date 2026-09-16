@@ -15,3 +15,7 @@ bathroomButton.addEventListener("click", function() {
     kitchenPage.style.display = 'none'
 
 });
+
+document.addEventListener("click", function(event) {
+    console.log("X:", event.clientX, "Y:", event.clientY);
+});
