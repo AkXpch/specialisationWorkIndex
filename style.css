@@ -35,13 +35,28 @@ body {
 }
 
 
-img {
+
+.background {
     /*need this to make layer event info work*/
     position: relative;
     margin: auto;
     height: 600px;
     display: block;
-    box-shadow: #4A4A4A;
+
+   
+}
+.sticker {
+    position:absolute;
+    z-index: 10;
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+.sticker img[alt="kettle"] {
+    width: 100px;
+    height: auto;
+    top: 100px;
 }
 
 main {

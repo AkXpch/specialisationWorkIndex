@@ -8,5 +8,10 @@ kitchenButton.addEventListener("click", function() {
     // if "click" kitchen button -> show kitchen page and hide bathroom page
     kitchenPage.style.display = 'block';
     bathroomPage.style.display = 'none';
-})
+});
 
+bathroomButton.addEventListener("click", function() {
+    bathroomPage.style.display = 'block'
+    kitchenPage.style.display = 'none'
+
+});
