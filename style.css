@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand:wght@400..700&family=Indie+Flower&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Oldenburg&family=Playfair+Display:wght@400..900&family=Roboto+Condensed:ital@0;1&family=Roboto+Slab:wght@600&family=Rye&family=Stardos+Stencil:wght@400;700&display=swap');
+
+/* saving our custom variablr */
+:root {
+    --colour-01: #F7D6D0;
+    --colour-02: #4A4A4A;
+    --colour-03: #E2B4BD;
+    --colour-04: #FFF5F5;
+    --colour-05: rgb(138, 29, 84);
+    --border: 0.5rem inset var(--colour-03);
+}
+/* dark mode */
+@media (prefers-color-scheme: dark){
+    :root {
+    --colour-01: #4A4A4A;
+    --colour-02: #F7D6D0;
+    --colour-03: #E2B4BD;
+    --colour-04: #FFF5F5;
+    --colour-05: rgb(138, 29, 84);
+
+}
+}
+
+body {
+    font-family: "Edu VIC WA NT Hand", cursive;
+    margin-top: 80px;
+    margin-left: 0;
+    margin-right: 0;
+
+
+}
+
+#bathroom-page {
+    display: none;
+}
+
+
+img {
+    /*need this to make layer event info work*/
+    position: relative;
+    margin: auto;
+    height: 600px;
+    display: block;
+    box-shadow: #4A4A4A;
+}
+
+main {
+    
+}
+
+
+
