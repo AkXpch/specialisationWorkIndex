@@ -53,6 +53,7 @@ body {
 
     transition: filter 0.15s ease, transform 0.15s ease;
 }
+/*make sticker move up when hover*/
 .sticker:hover {
     transform: translateY(-3px);
 }
