@@ -84,11 +84,17 @@ function stickerBehavior(stickers, folder){
 
             if(isPlaying == false){
                 isPlaying = true;
+
+                sticker.classList.add("playing");
+
                 sound.currentTime = 0; 
                 sound.play();
 
             }else {
                 isPlaying = false;
+
+                sticker.classList.remove("playing");
+
                 sound.pause();
                 sound.currentTime = 0
             }
