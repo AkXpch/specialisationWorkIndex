@@ -46,10 +46,91 @@ body {
     border: none;
     background: none;
     padding: 0;
-    filter: drop-shadow(3px 3px 5px var(--colour-05));
-}
-/*Kitchen Sticker*/
+    
+    filter: drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.5));
 
+    cursor: pointer;
+
+    transition: filter 0.15s ease, transform 0.15s ease;
+}
+.sticker:hover {
+    transform: translateY(-3px);
+}
+
+/*Bathroom Sticker*/
+
+/*bidet*/
+.bidet img{
+    width: 178px;
+    height:auto;
+}
+.bidet{
+    left: 0px;
+    top: 349px;
+}
+
+/*cabinate*/
+.cabinate img{
+    width: 173px;
+    height:auto;
+}
+.cabinate{
+    left: 425px;
+    top: 87px;
+}
+
+/*fabric*/
+.fabric img{
+    width: 179px;
+    height:auto;
+}
+.fabric{
+    left: 35px;
+    top: 101px;
+}
+
+/*mirror*/
+.mirror img{
+    width: 228px;
+    height:auto;
+}
+.mirror{
+    left: 187px;
+    top: 6px;
+}
+
+/*sink*/
+.sink img{
+    width: 242px;
+    height:auto;
+}
+.sink{
+    left: 178px;
+    top: 232px;
+}
+
+/*tapWater*/
+.tapWater img{
+    width: 136px;
+    height:auto;
+}
+.tapWater{
+    left: 468px;
+    top: 288px;
+}
+
+/*tissue*/
+.tissue img{
+    width: 116px;
+    height:auto;
+}
+.tissue{
+    left: 69px;
+    top: 327px;
+}
+
+
+/*Kitchen Sticker*/
 /*Bottom Carbinate*/
 .bottom-cabinate img {
     width: 185px;
@@ -116,14 +197,16 @@ body {
 }
 
 /*sink*/
-.sink img {
+#kitchen-page .sink img {
     width: 199px;
     height: auto;
 }
 
-.sink {
+#kitchen-page .sink {
     right: 141px;
     top: 266px;
+    left: auto;
+
 }
 
 /*smoke vacume*/
@@ -139,6 +222,9 @@ body {
 /*In this area I used AI (chatGPT) to help me fix a problem, when I shrink window screen, 
 the sticker not stay in place and move arround make the browser page messy, how can I fix this*/
 #bathroom-page {
+    display: block;
+}
+#kitchen-page {
     display: none;
 }
 #kitchen-page,
@@ -150,6 +236,8 @@ the sticker not stay in place and move arround make the browser page messy, how 
     position: relative;
     transform-origin: top center;
 }
+
+
 
 
 /*bg picture will scale base on browser width but never more than 600*/
