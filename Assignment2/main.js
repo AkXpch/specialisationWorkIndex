@@ -72,6 +72,16 @@ function stickerBehavior(stickers, folder){
 
         //click to add/remmove sound from remix
         sticker.addEventListener("click", function(){
+
+            // ChatGPT is used to fix problem here
+            // Problem: audio not working in browser but work in preview
+            //Answer: bc my brrowser host on Github page -> browser can keep the AudioContext suspended until the user interacts with the page
+
+            //If the browser hasn't started the audio system yet, start it now because the user just clicked.
+            if (audioContext.state === "suspended") {
+                audioContext.resume();
+            }
+
             if(isPlaying == false){
                 isPlaying = true;
                 sound.currentTime = 0; 
