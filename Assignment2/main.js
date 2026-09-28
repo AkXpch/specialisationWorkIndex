@@ -72,6 +72,20 @@ function stickerBehavior(stickers, folder){
     });
 }
 
-//use above function to activate behavior
+//use above(stickerBehavior) function to activate behavior
 const kitchenSticker = document.querySelectorAll("#kitchen-page .sticker");
 stickerBehavior(kitchenSticker, "kitchen");
+
+// Extended Technique -> mousemove()
+function mouseMoveBehavior(scene) {
+    scene.addEventListener("mouseover", function(event){
+        //check if mouseover work
+        //console.log("moving in img");
+
+        //
+        
+    });
+}
+
+//call mouseMoveBehavior function
+mouseMoveBehavior(kitchenPage);
