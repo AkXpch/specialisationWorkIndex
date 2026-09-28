@@ -53,12 +53,31 @@ body {
 
     transition: filter 0.15s ease, transform 0.15s ease;
 }
+
+/*add boeder around sticker shape*/
+.sticker img{
+    filter:
+        drop-shadow(4px 0px 0px var(--colour-03))
+        drop-shadow(-4px 0px 0px var(--colour-03))
+        drop-shadow(0px 4px 0px var(--colour-03))
+        drop-shadow(0px -4px 0px var(--colour-03));
+}
+
+.sticker.playing img {
+    filter:
+        brightness(0.5)
+        drop-shadow(3px 0px 0px var(--colour-05))
+        drop-shadow(-3px 0px 0px var(--colour-05))
+        drop-shadow(0px 3px 0px var(--colour-05))
+        drop-shadow(0px -3px 0px var(--colour-05));
+}
+
 /*make sticker move up when hover*/
 .sticker:hover {
     transform: translateY(-3px);
 }
 /*Add brightness when sample is playing*/
-.sticker:hover img {
+.sticker:not(.playing):hover img {
     filter: brightness(1.2);
 }
 
@@ -67,13 +86,11 @@ body {
     transform: translateY(2px);
 }
 /*when click on sticker to add audio to the loop -> make it stay dark*/
-.sticker.playing img{
-    filter:brightness(0.5);
 
-}
 .sticker.playing:hover {
     transform: translateY(2px);
 }
+
 
 /*Bathroom Sticker*/
 
