@@ -2,41 +2,32 @@
 
 /* saving our custom variablr */
 :root {
-    /*Bathroom*/
-     --colour-01: #F7D6D0;
+    --colour-01: #F7D6D0;
     --colour-02: #4A4A4A;
     --colour-03: #E2B4BD;
     --colour-04: #FFF5F5;
     --colour-05: rgb(138, 29, 84);
+    --border: 0.5rem inset var(--colour-03);
+}
+/* dark mode */
+@media (prefers-color-scheme: dark){
+    :root {
+    --colour-01: #4A4A4A;
+    --colour-02: #F7D6D0;
+    --colour-03: #E2B4BD;
+    --colour-04: #FFF5F5;
+    --colour-05: rgb(138, 29, 84);
 
-    /* Kitchen */
-    --page-bg: #fca376;
-    --toggle-bg: #f57940;
-    --icon-colour: #923009;
-    --toggle-shadow: #B86F4F;
-
-    body.bathroom-theme {
-    --page-bg: #CFEAF5;
-    --toggle-bg: #6FAFC9;
-    --icon-colour: #0a1558;
-    --toggle-shadow: #3E829D;
 }
 }
-
-
-
 
 body {
-    background-color: var(--page-bg);
-    transition: background-color 0.4s ease;
-}
-.room-toggle {
-    background-color: var(--kitchen-toggle);
-    transition: background-color 0.4s ease;
-}
+    font-family: "Edu VIC WA NT Hand", cursive;
+    margin-top: 80px;
+    margin-left: 0;
+    margin-right: 0;
 
-body.bathroom-theme .room-toggle {
-    background-color: var(--bathroom-toggle);
+
 }
 
 
@@ -46,9 +37,7 @@ body.bathroom-theme .room-toggle {
     height: 600px;
     display: block;
     z-index: 1;
-    border-radius: 40px;
-    filter: drop-shadow(3px 4px 4px gray
-    );
+
    
 }
 .sticker {
@@ -64,31 +53,12 @@ body.bathroom-theme .room-toggle {
 
     transition: filter 0.15s ease, transform 0.15s ease;
 }
-
-/*add boeder around sticker shape*/
-.sticker img{
-    filter:
-        drop-shadow(4px 0px 0px var(--colour-03))
-        drop-shadow(-4px 0px 0px var(--colour-03))
-        drop-shadow(0px 4px 0px var(--colour-03))
-        drop-shadow(0px -4px 0px var(--colour-03));
-}
-
-.sticker.playing img {
-    filter:
-        brightness(0.5)
-        drop-shadow(3px 0px 0px var(--colour-05))
-        drop-shadow(-3px 0px 0px var(--colour-05))
-        drop-shadow(0px 3px 0px var(--colour-05))
-        drop-shadow(0px -3px 0px var(--colour-05));
-}
-
 /*make sticker move up when hover*/
 .sticker:hover {
     transform: translateY(-3px);
 }
 /*Add brightness when sample is playing*/
-.sticker:not(.playing):hover img {
+.sticker:hover img {
     filter: brightness(1.2);
 }
 
@@ -97,11 +67,13 @@ body.bathroom-theme .room-toggle {
     transform: translateY(2px);
 }
 /*when click on sticker to add audio to the loop -> make it stay dark*/
+.sticker.playing img{
+    filter:brightness(0.5);
 
+}
 .sticker.playing:hover {
     transform: translateY(2px);
 }
-
 
 /*Bathroom Sticker*/
 
@@ -268,10 +240,10 @@ body.bathroom-theme .room-toggle {
 /*In this area I used AI (chatGPT) to help me fix a problem, when I shrink window screen, 
 the sticker not stay in place and move arround make the browser page messy, how can I fix this*/
 #bathroom-page {
-    display: none;
+    display: block;
 }
 #kitchen-page {
-    display: block;
+    display: none;
 }
 #kitchen-page,
 #bathroom-page{
@@ -294,71 +266,11 @@ the sticker not stay in place and move arround make the browser page messy, how 
         transform-origin: top center;
         margin-left: auto;
         margin-right: auto;
-        
     }
 }
 
-/* Button Styling*/
-
-.container {
-    width: 600px;
-    height: 70px;
-    margin-left: 350px;
-    margin-bottom: 10px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 
-/* The whole toggle */
 
-.room-toggle {
-    width: 130px;
-    height: 60px;
-
-    background-color: var(--toggle-bg);
-    border-radius: 50px;
-    position: relative;
-    cursor: pointer;
-
-    box-shadow: 0 6px 10px var(--toggle-shadow);
-
-    transition:
-        background-color 0.4s ease,
-        box-shadow 0.4s ease;
-}
-
-
-/* The circle that moves */
-
-.toggle-circle {
-    width: 50px;
-    height: 50px;
-
-    background-color: var(--colour-04);
-    border-radius: 50%;
-    position: absolute;
-    top: 5px;
-    left: 5px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    transition: left 0.3s ease;
-}
-
-
-/* Icon */
-.toggle-circle i {
-    font-size: 25px;
-    color: var(--icon-colour);
-}
-
-.room-toggle.bathroom .toggle-circle {
-    left: 75px;
-}
 
 
