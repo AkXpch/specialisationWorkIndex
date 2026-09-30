@@ -1,3 +1,77 @@
 body{
-    margin: 50px;
+    margin: 100px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+h1{
+   text-align: center;
+}
+
+h2{
+
+}
+
+h3{
+    margin-left: 40px;
+}
+
+h4{
+    font-weight: 100;
+    font-style: italic;
+    text-align: center;
+}
+
+p{
+    margin-left: 60px;
+}
+
+/*Image styling*/
+.p2 img{
+    width: 165px;
+    height: auto;
+}
+
+.p3 img{
+    width: 165px;
+    height: auto;
+}
+
+.p4-up img{
+    width: 350px;
+    height: auto;
+}
+.p4-down{
+    width: 500px;
+    height: auto;
+}
+
+
+.p5-up img{
+    width: 165px;
+    height: auto;
+}
+.p5-down{
+    width: 600px;
+    height: auto;
+}
+
+.p6 img{
+    width: 355px;
+    height: auto;
+}
+
+.p2, .p3, .p4-up, .p5-up, .p6{
+    display: flex;
+    justify-content: center; /* Centers the images horizontally inside the container */
+    align-items: center;     /* Aligns them vertically along the middle */
+    gap: 15px;              
+    margin: 20px 0; 
+
+}
+
+.p4-down, 
+.p5-down {
+    display: block;          
+    margin: 20px auto;       
 }
