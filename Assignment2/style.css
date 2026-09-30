@@ -9,17 +9,9 @@
     --colour-05: rgb(138, 29, 84);
     --border: 0.5rem inset var(--colour-03);
 }
-/* dark mode */
-@media (prefers-color-scheme: dark){
-    :root {
-    --colour-01: #4A4A4A;
-    --colour-02: #F7D6D0;
-    --colour-03: #E2B4BD;
-    --colour-04: #FFF5F5;
-    --colour-05: rgb(138, 29, 84);
 
-}
-}
+
+
 
 body {
     font-family: "Edu VIC WA NT Hand", cursive;
@@ -290,8 +282,68 @@ the sticker not stay in place and move arround make the browser page messy, how 
     }
 }
 
+/* Button Styling*/
 
+.container{
+    width: 600px;
+    height: 50px;
+    margin-left: 350px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 
+    
+}
 
+#bathroom-button,
+#kitchen-button{
+    background: linear-gradient(var(--colour-04), var(--colour-03));
+    margin: 20px;
+    height: 50px;
+    font-weight: 100;
+    padding: 1rem;
+    border-radius: 25px;
+    border: none;
+    box-shadow:
+        inset 0 -2px 2px var(--colour-05),
+        inset 0 -2px 2px var(--colour-03),
+        0 18px 14px -14px var(--colour-01),
+        -20px 40px 48px hsla(327, 34%, 30%, 0.6);
+    font-size: 18px;
+    font-family: "Short Stack", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#bathroom-button i,
+#kitchen-button i {
+    filter: drop-shadow(0 0 4px var(--colour-04));
+    
+}
+
+#bathroom-button:hover{
+    transform: translateY(-2px);;
+}
+
+#bathroom-button:focus{
+    transform: translateY(3px);
+    background: linear-gradient(var(--colour-02), var(--colour-05));
+    color: var(--colour-04);
+    
+
+}
+
+#kitchen-button:hover{
+    transform: translateY(-2px);;
+}
+
+#kitchen-button:focus{
+    transform: translateY(3px);
+    background: linear-gradient(var(--colour-02), var(--colour-05));
+    color: var(--colour-04);
+    
+}
 
 
