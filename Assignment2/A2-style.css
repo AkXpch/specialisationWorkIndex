@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Oldenburg&display=swap');
 
+:root{
+    background: linear-gradient(lavenderblush, lavender,rgb(231, 253, 253), rgb(233, 250, 233), rgb(244, 244, 227), rgb(252, 235, 226) );
+}
 body{
     margin: 100px;
     margin-left: 250px;
@@ -42,41 +45,51 @@ h4{
 
 p{
     margin-left: 60px;
+    margin-top: 0px;
+    margin-bottom: 2px;
+
 }
 
 /*Image styling*/
 .p2 img{
     width: 165px;
     height: auto;
+    border-radius: 1rem; 
 }
 
 .p3 img{
     width: 165px;
     height: auto;
+    border-radius: 1rem; 
 }
 
 .p4-up img{
     width: 350px;
     height: auto;
+    border-radius: 1rem; 
 }
 .p4-down{
     width: 500px;
     height: auto;
+    border-radius: 1rem; 
 }
 
 
 .p5-up img{
     width: 165px;
     height: auto;
+    border-radius: 1rem; 
 }
 .p5-down{
     width: 600px;
     height: auto;
+    border-radius: 1rem; 
 }
 
 .p6 img{
     width: 355px;
     height: auto;
+    border-radius: 1rem; 
 }
 
 .p2, .p3, .p4-up, .p5-up, .p6{
@@ -85,17 +98,18 @@ p{
     align-items: center;     /* Aligns them vertically along the middle */
     gap: 15px;              
     margin: 20px 0; 
-
+    border-radius: 1rem; 
 }
 
 .p4-down, 
 .p5-down {
     display: block;          
-    margin: 20px auto;       
+    margin: 20px auto;
+    border-radius: 1rem;     
 }
 
-footer a{
-    text-align: center;
-    align-items: center;
-    
+footer {
+    display: flex;
+    justify-content: center;
+    margin-block-start: 3rem;
 }
