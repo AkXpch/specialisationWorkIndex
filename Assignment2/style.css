@@ -2,25 +2,41 @@
 
 /* saving our custom variablr */
 :root {
-    --colour-01: #F7D6D0;
+    /*Bathroom*/
+     --colour-01: #F7D6D0;
     --colour-02: #4A4A4A;
     --colour-03: #E2B4BD;
     --colour-04: #FFF5F5;
     --colour-05: rgb(138, 29, 84);
-    --border: 0.5rem inset var(--colour-03);
+
+    /* Kitchen */
+    --page-bg: #fca376;
+    --toggle-bg: #f57940;
+    --icon-colour: #923009;
+    --toggle-shadow: #B86F4F;
+
+    body.bathroom-theme {
+    --page-bg: #CFEAF5;
+    --toggle-bg: #6FAFC9;
+    --icon-colour: #0a1558;
+    --toggle-shadow: #3E829D;
+}
 }
 
 
 
 
 body {
-    font-family: "Edu VIC WA NT Hand", cursive;
-    margin-top: 80px;
-    margin-left: 0;
-    margin-right: 0;
-    background-color: var(--colour-03);
+    background-color: var(--page-bg);
+    transition: background-color 0.4s ease;
+}
+.room-toggle {
+    background-color: var(--kitchen-toggle);
+    transition: background-color 0.4s ease;
+}
 
-
+body.bathroom-theme .room-toggle {
+    background-color: var(--bathroom-toggle);
 }
 
 
@@ -252,10 +268,10 @@ body {
 /*In this area I used AI (chatGPT) to help me fix a problem, when I shrink window screen, 
 the sticker not stay in place and move arround make the browser page messy, how can I fix this*/
 #bathroom-page {
-    display: block;
+    display: none;
 }
 #kitchen-page {
-    display: none;
+    display: block;
 }
 #kitchen-page,
 #bathroom-page{
@@ -285,81 +301,63 @@ the sticker not stay in place and move arround make the browser page messy, how 
 /* Button Styling*/
 
 .container {
-    position: fixed;
-
-    top: 50%;
-    left: 0;
-
-    width: 100%;
-    height: 100px;
-
-    transform: translateY(-50%);
+    width: 600px;
+    height: 70px;
+    margin-left: 350px;
+    margin-bottom: 10px;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* The whole toggle */
+
+.room-toggle {
+    width: 130px;
+    height: 60px;
+
+    background-color: var(--toggle-bg);
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+
+    box-shadow: 0 6px 10px var(--toggle-shadow);
+
+    transition:
+        background-color 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+
+/* The circle that moves */
+
+.toggle-circle {
+    width: 50px;
+    height: 50px;
+
+    background-color: var(--colour-04);
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+
+    display: flex;
+    justify-content: center;
     align-items: center;
 
-    padding-left: 200px;
-    padding-right: 200px;
-
-    box-sizing: border-box;
-
-    z-index: 20;
-}
-
-#bathroom-button,
-#kitchen-button {
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
+    transition: left 0.3s ease;
 }
 
 
-#bathroom-button img,
-#kitchen-button img {
-    width: 100px;
-    height: auto;
-    filter:
-        drop-shadow(3px 0 0 var(--colour-04))
-        drop-shadow(-3px 0 0 var(--colour-04))
-        drop-shadow(0 3px 0 var(--colour-04))
-        drop-shadow(0 -3px 0 var(--colour-04));
-
+/* Icon */
+.toggle-circle i {
+    font-size: 25px;
+    color: var(--icon-colour);
 }
 
-
-#bathroom-button:hover{
-    transform: translateY(-2px);;
+.room-toggle.bathroom .toggle-circle {
+    left: 75px;
 }
-
-#bathroom-button:focus{
-    transform: translateY(3px);
-    border: var(--colour-05);
-    filter: grayscale(1);
-    
-
-}
-
-#kitchen-button:hover{
-    transform: translateY(-2px);
-}
-
-#kitchen-button:focus{
-    transform: translateY(3px);
-    border: var(--colour-05);
-    filter: grayscale(1);
-
-}
-
-#bathroom-button {
-    position: relative;
-    left: -20px;
-}
-
-#kitchen-button {
-    position: relative;
-    left: -130px;
-}
-
 
