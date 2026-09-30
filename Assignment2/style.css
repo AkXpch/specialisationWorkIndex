@@ -26,6 +26,7 @@ body {
     margin-top: 80px;
     margin-left: 0;
     margin-right: 0;
+    background-color: var(--colour-03);
 
 
 }
@@ -37,7 +38,9 @@ body {
     height: 600px;
     display: block;
     z-index: 1;
-
+    border-radius: 40px;
+    filter: drop-shadow(3px 4px 4px gray
+    );
    
 }
 .sticker {
@@ -283,6 +286,7 @@ the sticker not stay in place and move arround make the browser page messy, how 
         transform-origin: top center;
         margin-left: auto;
         margin-right: auto;
+        
     }
 }
 
