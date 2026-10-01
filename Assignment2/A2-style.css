@@ -113,3 +113,12 @@ footer {
     justify-content: center;
     margin-block-start: 3rem;
 }
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 2px solid rgb(255, 184, 222);
+    padding: 10px;
+}
