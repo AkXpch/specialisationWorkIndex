@@ -1,0 +1,77 @@
+Ice,Wed Sep 30 16:47:12 2026 +1000,prototype6,
+Ice,Wed Sep 30 15:59:54 2026 +1000,update prototype 5,
+Ice,Wed Sep 30 15:45:25 2026 +1000,prototype 5,
+Ice,Wed Sep 30 14:18:23 2026 +1000,Add link to prototype 4 in the document,
+Ice,Wed Sep 30 13:14:51 2026 +1000,prototype 4,
+Ice,Wed Sep 30 11:33:01 2026 +1000,style and link to A2,
+Ice,Tue Sep 29 09:45:32 2026 +1000,Update Assignment2.html,add link to prototype 3
+
+Ice,Tue Sep 29 09:37:19 2026 +1000,Add border to prototype 3,
+Ice,Tue Sep 29 09:01:13 2026 +1000,update doc,
+Ice,Tue Sep 29 08:59:48 2026 +1000,update document draft,
+Ice,Tue Sep 29 07:41:25 2026 +1000,Edit Sticker appearance for prototype2,
+Ice,Tue Sep 29 06:08:06 2026 +1000,update,update
+
+Ice,Tue Sep 29 04:48:55 2026 +1000,save,
+Ice,Tue Sep 29 04:15:19 2026 +1000,connect A2 to home page,
+Ice,Tue Sep 29 04:11:38 2026 +1000,Reorganize file and add extended technique,
+Ice,Mon Sep 28 21:43:17 2026 +1000,arrange files,
+Ice,Thu Sep 17 06:43:41 2026 +1000,Add sticker behevior,mouse enter = play sample
+mouse leave = stop play sample
+click = add/remove to remix
+
+Ice,Thu Sep 17 04:44:26 2026 +1000, positioned stickers and add audio,position each sticker in place on top of background and add audio
+
+Ice,Thu Sep 17 03:22:52 2026 +1000,Add buttons,
+Ice,Thu Sep 17 02:44:17 2026 +1000,create button to switch between 2 environment,bathroom and kitchen
+
+Ice,Wed Sep 16 22:08:39 2026 +1000,Add files, audio and assets,
+Ice,Wed Sep 16 22:05:32 2026 +1000,readjust file,
+Ice,Mon Aug 17 20:46:25 2026 +1000,center picture,
+Ice,Fri Aug 14 15:36:41 2026 +1000,word checking,
+Ice,Fri Aug 14 14:31:56 2026 +1000,Add reference and Figure description,
+Ice,Thu Aug 13 14:30:08 2026 +1000,structure text and picture,adjust text and image to br in the middle
+
+Ice,Thu Aug 13 14:05:45 2026 +1000,front and color adjustment,
+Ice,Thu Aug 13 13:08:53 2026 +1000,styling - organize size and front,
+Ice,Thu Aug 13 04:48:58 2026 +1000,Change front,
+Ice,Thu Aug 13 04:15:41 2026 +1000,adding picture,Add picture to the page
+
+Ice,Thu Aug 13 03:00:59 2026 +1000,chane table color and replace dummy text,changing table style and replace dummy text with real writing
+
+Ice,Wed Aug 12 17:26:36 2026 +1000,Add website name,Add website name and delete repeat heading
+
+Ice,Wed Aug 12 17:21:43 2026 +1000,Add table to Project framing part,create table and add more information in part 1
+
+Ice,Wed Aug 12 16:01:23 2026 +1000,Replace random text to with written analysis,1. change the name of assignment 1 and 2 in home page
+
+2. fill up the dummy text with my writing.
+
+Ice,Fri Aug 7 17:30:27 2026 +1000,Adding link,Add link to miroboard
+
+Ice,Thu Aug 6 11:46:13 2026 +1000,Adding Structure and style,planning layout for the document and adding style
+
+Ice,Thu Aug 6 11:21:37 2026 +1000,comment,add link to live page
+
+Ice,Thu Jul 30 11:11:00 2026 +1000,Name changing,
+Ice,Thu Jul 30 11:08:00 2026 +1000,Change page name,fix the name from "assignment2" to "system Design Document"
+
+Ice,Thu Jul 30 11:04:11 2026 +1000,fix,
+Ice,Thu Jul 30 11:01:53 2026 +1000,fix issue,
+Ice,Thu Jul 30 10:56:22 2026 +1000,crete section and fix mistake,
+Ice,Thu Jul 30 10:52:57 2026 +1000,Add heading and link,I add heading and create sections
+
+Ice,Thu Jul 30 10:48:31 2026 +1000,init Assignment,create assignment 1 file and link
+
+Ice,Thu Jul 23 12:12:07 2026 +1000,first change,We change out the detail to our own and change icon to our own as well
+
+Patrick McMahon,Thu Jul 16 11:20:02 2026 +1000,fixed assignment links,removed id refs so we can add pages
+
+Patrick McMahon,Thu Jul 16 10:45:35 2026 +1000,change favicon and remove unnecessary sections,
+hase,Fri Jun 5 13:00:32 2026 +1000,moved to flex in flex,grid wasn't quite cutting it so i moved to a nested flex situation for the main section. now hopefully should all work as intended
+
+hase,Fri Jun 5 12:03:25 2026 +1000,more responsiveq,fixed grid issues of overflow. added a max width to text
+
+hase,Fri Jun 5 11:10:13 2026 +1000,responsiveness,added in grid template for the four areas to shift based on screen width
+
+hase,Fri Jun 5 09:14:59 2026 +1000,init,set up and linked basic files
