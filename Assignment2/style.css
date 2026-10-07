@@ -56,11 +56,24 @@ body {
 /*make sticker move up when hover*/
 .sticker:hover {
     transform: translateY(-3px);
-    filter: grayscale(100%) drop-shadow(3px 4px 4px rgba(122, 121, 121, 0.5));
+}
+/*Add brightness when sample is playing*/
+.sticker:hover img {
+    filter: brightness(1.2);
 }
 
+/*Make sticker move down when click*/
+.sticker.playing {
+    transform: translateY(2px);
+}
+/*when click on sticker to add audio to the loop -> make it stay dark*/
+.sticker.playing img{
+    filter:brightness(0.5);
 
-
+}
+.sticker.playing:hover {
+    transform: translateY(2px);
+}
 
 /*Bathroom Sticker*/
 
