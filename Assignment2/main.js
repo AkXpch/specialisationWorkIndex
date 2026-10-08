@@ -14,7 +14,17 @@ const volume = audioContext.createGain();
 panner.connect(volume);
 volume.connect(audioContext.destination);
 
+kitchenButton.addEventListener("click", function() {
+    // if "click" kitchen button -> show kitchen page and hide bathroom page
+    kitchenPage.style.display = 'block';
+    bathroomPage.style.display = 'none';
+});
 
+bathroomButton.addEventListener("click", function() {
+    bathroomPage.style.display = 'block'
+    kitchenPage.style.display = 'none'
+
+});
 // Use to check mouse position
 document.addEventListener("click", function(event) {
     console.log("X:", event.clientX, "Y:", event.clientY);
@@ -137,34 +147,3 @@ function mouseMoveBehavior(scene) {
 //call mouseMoveBehavior function
 mouseMoveBehavior(kitchenPage);
 mouseMoveBehavior(bathroomPage);
-
-const roomToggle = document.getElementById("room-toggle");
-const toggleCircle = document.getElementById("toggle-circle");
-const toggleIcon = document.querySelector("i");
-
-roomToggle.addEventListener("click", function(){
-    if(roomToggle.classList.contains("bathroom")) {
-        
-        //go to kitchen
-        roomToggle.classList.remove("bathroom");
-
-        kitchenPage.style.display = "block";
-        bathroomPage.style.display = "none";
-
-        toggleIcon.className = "bx bxs-bowl-hot";
-
-        document.body.classList.remove("bathroom-theme");
-
-
-    } else {
-        
-        roomToggle.classList.add("bathroom");
-
-        bathroomPage.style.display = "block";
-        kitchenPage.style.display = "none";
-
-        toggleIcon.className = "bx bxs-bath";
-
-        document.body.classList.add("bathroom-theme");
-    }
-})
