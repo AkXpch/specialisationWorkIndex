@@ -18,11 +18,18 @@ kitchenButton.addEventListener("click", function() {
     // if "click" kitchen button -> show kitchen page and hide bathroom page
     kitchenPage.style.display = 'block';
     bathroomPage.style.display = 'none';
+    
+    //style change when click button
+    document.body.classList.add("kitchen-mode");
+    document.body.classList.remove("bathroom-mode");
 });
 
 bathroomButton.addEventListener("click", function() {
     bathroomPage.style.display = 'block'
     kitchenPage.style.display = 'none'
+
+    document.body.classList.add("bathroom-mode");
+    document.body.classList.remove("kitchen-mode");
 
 });
 // Use to check mouse position

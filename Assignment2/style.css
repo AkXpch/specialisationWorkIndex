@@ -8,6 +8,11 @@
     --colour-04: #FFF5F5;
     --colour-05: rgb(138, 29, 84);
     --border: 0.5rem inset var(--colour-03);
+
+    /* Room Border Colors */
+    --bathroom-border:  #cbe7f5; /* Soft blue border */
+    --kitchen-border: #ffab6f;  /* Warm orange border */
+
 }
 
 
@@ -19,6 +24,8 @@ body {
     margin-left: 0;
     margin-right: 0;
     background-color: var(--colour-03);
+    /*bg and border transition smothly(change color)*/
+    transition: background-color 0.3s ease;
 
 
 }
@@ -56,6 +63,7 @@ body {
         drop-shadow(-4px 0px 0px var(--colour-03))
         drop-shadow(0px 4px 0px var(--colour-03))
         drop-shadow(0px -4px 0px var(--colour-03));
+
 }
 
 .sticker.playing img {
@@ -88,7 +96,8 @@ body {
 
 
 /*Bathroom Sticker*/
-
+/*Change to percentagge
+-set width and heigh, left and top*/
 /*bidet*/
 .bidet img{
     width: 178px;
@@ -265,6 +274,7 @@ the sticker not stay in place and move arround make the browser page messy, how 
     margin-left: 350px;
     position: relative;
     transform-origin: top center;
+    
 }
 
 
@@ -279,19 +289,22 @@ the sticker not stay in place and move arround make the browser page messy, how 
         margin-left: auto;
         margin-right: auto;
         
+        
     }
 }
 
 /* Button Styling*/
 
-.container {
+.container-bathroom,
+.container-kitchen {
     position: fixed;
 
     top: 50%;
     left: 0;
 
     width: 100%;
-    height: 100px;
+    height: 0px;
+    max-width: 1500px;
 
     transform: translateY(-50%);
 
@@ -299,12 +312,12 @@ the sticker not stay in place and move arround make the browser page messy, how 
     justify-content: space-between;
     align-items: center;
 
-    padding-left: 200px;
-    padding-right: 200px;
-
+    padding: 0 10%;
     box-sizing: border-box;
-
     z-index: 20;
+    
+
+
 }
 
 #bathroom-button,
@@ -313,6 +326,9 @@ the sticker not stay in place and move arround make the browser page messy, how 
     border: none;
     padding: 0;
     cursor: pointer;
+    cursor: pointer;
+    transform: translateY(-5%); /* Keeps them perfectly centered vertically */
+    transition: transform 0.15s ease, filter 0.15s ease;
 }
 
 
@@ -362,4 +378,21 @@ the sticker not stay in place and move arround make the browser page messy, how 
     right: 140px;
 }
 
+
+/*  bathroom mode is active */
+body.bathroom-mode {
+    background-color: #aad5ea; /* change background color */
+    --colour-03: var(--bathroom-border); /* Changes sticker outline color */
+}
+
+/* kitchen mode is active */
+body.kitchen-mode {
+    background-color: #ebbb8e;
+    --colour-03: var(--kitchen-border); 
+}
+
+/*Media Sizing*/
+@media screen {
+    
+}
 
