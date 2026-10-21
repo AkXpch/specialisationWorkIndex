@@ -15,6 +15,12 @@
 
 }
 
+main {
+    display: flex;
+    justify-content: center;   
+    align-items: center;       
+    gap: min(20px, 2vw);       /* space between button and game */
+}
 
 
 
@@ -32,16 +38,13 @@ body {
 
 
 .background {
-    /*need this to make layer event info work*/
-    width: 600px;
-    height: 600px;
+    width: 100%;
+    height: auto;
     display: block;
-    z-index: 1;
     border-radius: 40px;
-    filter: drop-shadow(3px 4px 4px gray
-    );
-   
+    filter: drop-shadow(3px 4px 4px gray);
 }
+
 .sticker {
     position:absolute;
     z-index: 10;
@@ -58,6 +61,9 @@ body {
 
 /*add boeder around sticker shape*/
 .sticker img{
+    width: 100%;
+    height: auto;
+    display: block;
     filter:
         drop-shadow(4px 0px 0px var(--colour-03))
         drop-shadow(-4px 0px 0px var(--colour-03))
@@ -98,166 +104,121 @@ body {
 /*Bathroom Sticker*/
 /*Change to percentagge
 -set width and heigh, left and top*/
+
+/*Clausde(2026) is used in this part
+Promp: "I need to change sticker size from pixle to percentage, is there anyway i can calculate it?"
+Answer: percentage = (pixel value ÷ container size) × 100 = in this case container size = 600*/
+
+/*Change px to % so the page can resize*/
 /*bidet*/
-.bidet img{
-    width: 178px;
-    height:auto;
-}
 .bidet{
-    left: 0px;
-    top: 349px;
+    width: 29.67%; 
+    left: 0;      
+    top: 58.17%;
 }
 
 /*cabinate*/
-.cabinate img{
-    width: 173px;
-    height:auto;
-}
 .cabinate{
-    left: 425px;
-    top: 87px;
+    width: 28.83%; 
+    left: 70.83%; 
+    top: 14.5%;
 }
 
 /*fabric*/
-.fabric img{
-    width: 179px;
-    height:auto;
-}
 .fabric{
-    left: 35px;
-    top: 101px;
+    width: 29.83%; 
+    left: 5.83%;  
+    top: 16.83%;
 }
 
 /*mirror*/
-.mirror img{
-    width: 228px;
-    height:auto;
-}
 .mirror{
-    left: 187px;
-    top: 6px;
+    width: 38%;    
+    left: 31.17%; 
+    top: 1%;
 }
 
 /*sink*/
-.sink img{
-    width: 242px;
-    height:auto;
-}
 .sink{
-    left: 178px;
-    top: 232px;
+    width: 40.33%; 
+    left: 29.67%; 
+    top: 38.67%;
 }
 
 /*tapWater*/
-.tapWater img{
-    width: 136px;
-    height:auto;
-}
 .tapWater{
-    left: 468px;
-    top: 288px;
+    width: 22.67%; 
+    left: 78%;    
+    top: 48%;
 }
 
 /*tissue*/
-.tissue img{
-    width: 116px;
-    height:auto;
-}
 .tissue{
-    left: 69px;
-    top: 327px;
+    width: 19.33%; 
+    left: 11.5%;  
+    top: 54.5%;
 }
 
 
 /*Kitchen Sticker*/
 /*Bottom Carbinate*/
-.bottom-cabinate img {
-    width: 185px;
-    height: auto;
-}
 
 .bottom-cabinate {
-    left: 148px;
-    top: 381px;
+    width: 30.83%; 
+    left: 24.67%; 
+    top: 63.5%;
 }
 
 /*cups*/
-.cups img {
-    width: 65px;
-    height: auto;
-}
-
 .cups {
-    left: 218px;
-    top: 106px;
+    width: 10.83%; 
+    left: 36.33%; 
+    top: 17.67%;
 }
 /*fridge*/
-.fridge img {
-    width: 200px;
-    height: auto;
-}
-
 .fridge {
-    right: -17px;
-    top: 183px;
+    width: 33.33%; 
+    right: -2.83%; 
+    top: 30.5%;
 }
 
 /*Kettle*/
-.kettle img {
-    width: 113px;
-    height: auto;
-}
-
 .kettle {
-    left: 22px;
-    top: 269px;
+    width: 18.83%; 
+    left: 3.67%;  
+    top: 44.83%;
 }
 
 /*oven*/
-.oven img {
-    width: 188px;
-    height: auto;
-}
-
 .oven {
-    left: -3px;
-    top: 379px;
+    width: 31.33%; 
+    left: -0.5%;  
+    top: 63.17%;
 }
 
 /*plates*/
-.plates img {
-    width: 110px;
-    height: auto;
-}
-
 .plates {
-    right: 201px;
-    top: 133px;
+    width: 18.33%; 
+    right: 33.5%; 
+    top: 22.17%;
 }
 
 /*sink*/
-#kitchen-page .sink img {
-    width: 199px;
-    height: auto;
-}
-
 #kitchen-page .sink {
-    right: 141px;
-    top: 266px;
+    width: 33.17%; 
+    right: 23.5%; 
+    top: 44.33%; 
     left: auto;
 
 }
 
 /*smoke vacume*/
-.smoke-vacume img {
-    width: 188px;
-    height: auto;
+.smoke-vacume {
+   width: 31.33%; 
+   left: -0.17%; 
+   top: -1.17%;
 }
 
-.smoke-vacume {
-    left: -1px;
-    top: -7px;
-}
 /*In this area I used AI (chatGPT) to help me fix a problem, when I shrink window screen, 
 the sticker not stay in place and move arround make the browser page messy, how can I fix this*/
 #bathroom-page {
@@ -267,56 +228,21 @@ the sticker not stay in place and move arround make the browser page messy, how 
     display: none;
 }
 #kitchen-page,
-#bathroom-page{
-    width: 600px;
-    height: 600px;
-    margin: auto;
-    margin-left: 350px;
+#bathroom-page {
+    width: min(600px, 66vw, 70vh);
+    aspect-ratio: 1 / 1;
+    margin: 0;              
     position: relative;
-    transform-origin: top center;
-    
+    flex-shrink: 0;
 }
 
-
-
-
-/*bg picture will scale base on browser width but never more than 600*/
-@media (max-width: 600px) {
-    #kitchen-page, 
-    #bathroom-page{
-        transform: scale(calc(100vw / 600));
-        transform-origin: top center;
-        margin-left: auto;
-        margin-right: auto;
-        
-        
-    }
-}
 
 /* Button Styling*/
 
 .container-bathroom,
 .container-kitchen {
-    position: fixed;
-
-    top: 50%;
-    left: 0;
-
-    width: 100%;
-    height: 0px;
-    max-width: 1500px;
-
-    transform: translateY(-50%);
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 0 10%;
-    box-sizing: border-box;
+    flex-shrink: 0;
     z-index: 20;
-    
-
 
 }
 
@@ -326,15 +252,14 @@ the sticker not stay in place and move arround make the browser page messy, how 
     border: none;
     padding: 0;
     cursor: pointer;
-    cursor: pointer;
-    transform: translateY(-5%); /* Keeps them perfectly centered vertically */
+    flex-shrink: 0;
     transition: transform 0.15s ease, filter 0.15s ease;
 }
 
 
 #bathroom-button img,
 #kitchen-button img {
-    width: 100px;
+    width: min(100px, 11vw);
     height: auto;
     filter:
         drop-shadow(3px 0 0 var(--colour-04))
@@ -352,8 +277,7 @@ the sticker not stay in place and move arround make the browser page messy, how 
 #bathroom-button:focus{
     transform: translateY(3px);
     border: var(--colour-05);
-    filter: grayscale(1);
-    
+    filter: grayscale(1);   
 
 }
 
@@ -368,15 +292,6 @@ the sticker not stay in place and move arround make the browser page messy, how 
 
 }
 
-#bathroom-button {
-    position: relative;
-    left: -20px;
-}
-
-#kitchen-button {
-    position: relative;
-    right: 140px;
-}
 
 
 /*  bathroom mode is active */
@@ -391,8 +306,4 @@ body.kitchen-mode {
     --colour-03: var(--kitchen-border); 
 }
 
-/*Media Sizing*/
-@media screen {
-    
-}
 
