@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Oldenburg&display=swap');
+
+:root{
+    background: linear-gradient(lavenderblush, lavender,rgb(231, 253, 253), rgb(233, 250, 233), rgb(244, 244, 227), rgb(252, 235, 226) );
+}
+body{
+    margin: 100px;
+    margin-left: 250px;
+    margin-right: 250px;
+    font-family: "Playfair Display", serif;
+ 
+}
+
+.websiteName {
+    font-family: "Stardos Stencil", system-ui;
+    font-optical-sizing: auto;
+    font-size: 120px;
+    margin-bottom: 0px;
+}
+h1{
+   text-align: center;
+   font-family: "Stardos Stencil", system-ui;
+   font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+h2{
+    font-family: "Roboto Slab", serif;
+}
+
+h3{
+    margin-left: 40px;
+    font-family: "Roboto Slab", serif;
+}
+
+h4{
+    font-weight: 100;
+    font-style: italic;
+    text-align: center;
+}
+
+p{
+    margin-left: 60px;
+    margin-top: 0px;
+    margin-bottom: 2px;
+
+}
+
+/*Table styling*/
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 2px solid rgb(255, 184, 222);
+    padding: 10px;
+}
+footer{ 
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    margin-top: 80px;
+}

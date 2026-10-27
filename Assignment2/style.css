@@ -254,6 +254,7 @@ the sticker not stay in place and move arround make the browser page messy, how 
     cursor: pointer;
     flex-shrink: 0;
     transition: transform 0.15s ease, filter 0.15s ease;
+
 }
 
 
@@ -261,36 +262,44 @@ the sticker not stay in place and move arround make the browser page messy, how 
 #kitchen-button img {
     width: min(100px, 11vw);
     height: auto;
+    cursor: pointer;
+
+    transition: filter 0.15s ease, transform 0.15s ease;
+    
     filter:
+        /*White border of stickers*/
         drop-shadow(3px 0 0 var(--colour-04))
         drop-shadow(-3px 0 0 var(--colour-04))
         drop-shadow(0 3px 0 var(--colour-04))
-        drop-shadow(0 -3px 0 var(--colour-04));
+        drop-shadow(0 -3px 0 var(--colour-04))
+        /*soft shadow*/
+        
+    
 
 }
 
 
-#bathroom-button:hover{
-    transform: translateY(-2px);;
-}
-
-#bathroom-button:focus{
-    transform: translateY(3px);
-    border: var(--colour-05);
-    filter: grayscale(1);   
-
-}
-
+#bathroom-button:hover,
 #kitchen-button:hover{
-    transform: translateY(-2px);
+    transform: translateY(-3px);;
 }
 
-#kitchen-button:focus{
-    transform: translateY(3px);
-    border: var(--colour-05);
-    filter: grayscale(1);
-
+#bathroom-button:hover img,
+#kitchen-button:hover img{
+    filter: 
+        drop-shadow(3px 0 0 var(--colour-04))
+        drop-shadow(-3px 0 0 var(--colour-04))
+        drop-shadow(0 3px 0 var(--colour-04))
+        drop-shadow(0 -3px 0 var(--colour-04))
+        drop-shadow(0 10px 12px rgba(0, 0, 0, 0.35));;
 }
+
+#bathroom-button:active,
+#kitchen-button:active {
+    transform: translateY(2px);
+}
+
+
 
 
 
