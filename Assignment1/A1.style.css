@@ -1,0 +1,449 @@
+
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Oldenburg&family=Playfair+Display&display=swap');
+
+
+:root {
+    --colour-text: #5A3028;
+    --colour-bg: #FFF7F0;
+    --colour-heading: #8A3F32;
+    --colour-table: #F5DFD5;
+    --colour-border: #D6B5A5;
+    --colour-accent: #E9A6A6;
+}
+
+
+/* page style*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--colour-bg);
+    color: var(--colour-text);
+
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+    line-height: 1.7;
+
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Oldenburg", serif;
+    color: var(--colour-heading);
+    line-height: 1.4;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.8rem;
+
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+
+    margin-left: 0;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+
+    margin-left: 0;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+
+/* MAIN WEBSITE TITLE */
+
+.websiteName {
+    font-family: "Oldenburg", serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 0.5;
+
+    text-align: center;
+    margin-bottom: 0;
+
+    color: var(--colour-heading);
+}
+
+
+
+.headColor {
+    color: var(--colour-heading);
+}
+
+
+.headingSpace {
+    text-indent: 0;
+}
+
+
+
+
+p {
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+a {
+    color: var(--colour-heading);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+}
+
+a:hover {
+    color: #B05B52;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 2rem;
+}
+
+
+
+.mainNavContainer {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    min-width: fit-content;
+    flex: 1;
+}
+
+
+/* main content */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+main section {
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+
+img {
+    display: block;
+
+    max-width: 100%;
+    width: 60%;
+    height: auto;
+
+    margin: 20px auto;
+}
+
+
+/* table */
+
+table {
+    font-family: "Playfair Display", serif;
+    font-size: 0.95rem;
+
+    border-collapse: collapse;
+    width: 100%;
+
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+td,
+th {
+    border: 2px solid var(--colour-border);
+
+    text-align: left;
+    padding: 12px;
+}
+
+th {
+    background-color: var(--colour-accent);
+    color: var(--colour-text);
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: var(--colour-table);
+}
+
+
+
+
+#game-link {
+    display: block;
+
+    text-align: center;
+
+    font-family: "Oldenburg", serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+
+    margin: 1.5rem auto;
+}
+
+
+
+
+aside {
+    visibility: hidden;
+    flex: 1;
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 3rem;
+}
+
+
+
+
+
+.prose > * + * {
+    margin-block-start: var(--prose-flow, 1em);
+}
+
+
+/* heading*/
+
+.AnalisisHeading {
+    margin-top: 10px;
+}
+
+
+/* large screen */
+
+@media (width > 1600px) {
+    body {
+        max-width: 1100px;
+    }
+}
+
+
+/* table for small */
+
+@media (width < 1200px) {
+    body {
+        padding: 32px;
+    }
+
+    header {
+        margin-bottom: 2rem;
+    }
+
+    footer {
+        margin-top: 2rem;
+    }
+}
+
+
+/* Table */
+
+@media (width < 840px) {
+    body {
+        padding: 24px;
+    }
+
+    header {
+        margin-bottom: 1.5rem;
+    }
+
+    .mainNavContainer {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    nav {
+        flex: 0;
+        width: 100%;
+        max-width: 80ch;
+
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    main {
+        flex: 1;
+    }
+
+    main > section {
+        max-width: 80ch;
+    }
+
+    aside {
+        flex: 0;
+    }
+
+    footer {
+        margin-top: 1rem;
+    }
+
+    .websiteName {
+        font-size: clamp(2.5rem, 8vw, 4rem);
+    }
+}
+
+
+/* ========================================
+   MOBILE PHONES
+======================================== */
+
+@media (width < 600px) {
+    body {
+        padding: 16px;
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.15rem;
+    }
+
+    .websiteName {
+        font-size: 2.5rem;
+    }
+
+    header {
+        margin-bottom: 1rem;
+    }
+
+    main > section {
+        width: 100%;
+    }
+
+    img {
+        width: 90%;
+    }
+
+    table {
+        font-size: 0.85rem;
+    }
+
+    td,
+    th {
+        padding: 8px;
+    }
+
+    footer {
+        margin-top: 1rem;
+    }
+}
+
+/* Centre the entire documentation content */
+
+body {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+/* Keep the title centred */
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.websiteName {
+    width: 100%;
+    text-align: center;
+}
+
+/* Centre the content sections */
+
+body > p,
+body > div[id^="topic-"] {
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*ChatGPT is used to help adjust the text to be in the center and readable*/
+
+body > p,
+body > div[id^="topic-"] p {
+    text-align: left;
+}
+
+/* Centre section headings */
+
+body > div[id^="topic-"] h2 {
+    text-align: center;
+}
+
+/* Keep images centred */
+
+body > div[id^="topic-"] img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

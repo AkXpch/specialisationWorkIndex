@@ -38,7 +38,10 @@ body {
     gap: 1rem;
 }
 
+strong{
+     font-family: "Playfair Display", serif;
 
+}
 
 h1,
 h2,
