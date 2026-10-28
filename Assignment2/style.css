@@ -4,9 +4,9 @@
 :root {
     --colour-01: #F7D6D0;
     --colour-02: #4A4A4A;
-    --colour-03: #E2B4BD;
+    --colour-03: #f2aebc;
     --colour-04: #FFF5F5;
-    --colour-05: rgb(138, 29, 84);
+    --colour-05: rgb(250, 236, 243);
     --border: 0.5rem inset var(--colour-03);
 
     /* Room Border Colors */
@@ -43,6 +43,7 @@ body {
     display: block;
     border-radius: 40px;
     filter: drop-shadow(3px 4px 4px gray);
+    z-index: 8;
 }
 
 .sticker {
@@ -234,6 +235,7 @@ the sticker not stay in place and move arround make the browser page messy, how 
     margin: 0;              
     position: relative;
     flex-shrink: 0;
+    z-index: 10;
 }
 
 
@@ -305,14 +307,46 @@ the sticker not stay in place and move arround make the browser page messy, how 
 
 /*  bathroom mode is active */
 body.bathroom-mode {
-    background-color: #aad5ea; /* change background color */
+    background-color: #9fdfff; /* change background color */
     --colour-03: var(--bathroom-border); /* Changes sticker outline color */
 }
 
 /* kitchen mode is active */
 body.kitchen-mode {
-    background-color: #ebbb8e;
+    background-color: #ffba79;
     --colour-03: var(--kitchen-border); 
 }
 
 
+.texture{
+    position: absolute;
+    z-index: 10;
+
+    height: 272%; 
+    top: -80%;
+    left: -50%;
+    object-fit: cover; 
+    transform: rotate(90deg);
+    opacity: 0.3;
+
+    display: block;
+
+}
+
+/* Volume Indicator */
+#volume-indicator {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 100;
+}
+
+#volume-icon {
+    position: fixed;
+    right: 2%;
+    bottom: 3%;
+    z-index: 100;
+    font-size: 40px;
+    pointer-events: none;
+    
+}

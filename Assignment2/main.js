@@ -148,6 +148,21 @@ function mouseMoveBehavior(scene) {
         let volumeMouse = 1 - ((mouseY - environmentTop) / scene.offsetHeight);
         //Apply mouse to Y volume
         volume.gain.value = volumeMouse;
+
+        // Get volume icon
+        const volumeIcon = document.getElementById("volume-icon");
+
+        // Change icon based on volume level
+        if (volumeMouse <= 0.05) {
+            volumeIcon.className = "bx bxs-volume-mute";
+        }
+        else if (volumeMouse <= 0.5) {
+            volumeIcon.className = "bx bxs-volume-low";
+        }
+        else {
+        volumeIcon.className = "bx bxs-volume-full";
+        }
+
     });
 }
 

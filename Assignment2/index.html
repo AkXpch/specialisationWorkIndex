@@ -9,6 +9,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand:wght@400..700&family=Indie+Flower&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Oldenburg&family=Playfair+Display:wght@400..900&family=Roboto+Condensed:ital@0;1&family=Roboto+Slab:wght@600&family=Rye&family=Short+Stack&family=Stardos+Stencil:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
@@ -21,7 +22,12 @@
             </button>
         </nav>
 
+        <div id="volume-indicator">
+            <i class='bx bxs-volume-full' id="volume-icon"></i>
+        </div>
+
         <div id="bathroom-page">
+            <img class="texture" src="assets/paper.jpg" alt="paper texture">
             <img class="background" src="assets/bathroom.png" alt="bathroom-bg">
 
             <button class="sticker bidet"data-sound="toilet_flood.wav" >
@@ -50,6 +56,7 @@
         <div id="kitchen-page">
             <!--Add BG image-->
             <img class="background" src="assets/kitchen.png" alt="kitchen-bg">
+            <img class="texture" src="assets/paper.jpg" alt="paper texture">
 
             <!--Add Buttons-->
             <button class="sticker bottom-cabinate" data-sound="cabinet.mp3">
