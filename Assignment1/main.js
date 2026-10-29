@@ -83,3 +83,44 @@ stickers.forEach(function(sticker) {
     });
 
 });
+
+//Kitchen sticker
+
+const kitchenStickers = document.querySelectorAll("#kitchen-demo .sticker");
+const interactionText = document.getElementById("interaction-text");
+
+kitchenStickers.forEach(function(sticker) {
+
+    let isPlaying = false;
+
+    // mouse moves over
+    sticker.addEventListener("mouseenter", function() {
+        if (isPlaying == false) {
+            interactionText.textContent = "Hovered - no border, lighter";
+        }
+    });
+
+    //mouse leaves a sticker
+    sticker.addEventListener("mouseleave", function() {
+        if (isPlaying == false) {
+            interactionText.textContent =
+                "Hover over a sticker to see its effect.";
+        }
+    });
+
+    // clicks 
+    sticker.addEventListener("click", function() {
+        if (isPlaying == false) {
+            isPlaying = true;
+            sticker.classList.add("playing");
+            interactionText.textContent =
+                "Clicked - added to loop, darker";
+        } else {
+            isPlaying = false;
+            sticker.classList.remove("playing");
+            interactionText.textContent =
+                "Removed from loop — original appearance";
+        }
+    });
+
+});
