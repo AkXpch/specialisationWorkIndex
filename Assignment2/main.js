@@ -117,7 +117,7 @@ function stickerBehavior(stickers, folder){
 const kitchenSticker = document.querySelectorAll("#kitchen-page .sticker");
 const bathroomSticker = document.querySelectorAll("#bathroom-page .sticker")
 stickerBehavior(kitchenSticker, "kitchen");
-stickerBehavior(bathroomSticker, "bathroom")
+stickerBehavior(bathroomSticker, "bathroom");
 
 // Extended Technique -> mousemove()
 function mouseMoveBehavior(scene) {

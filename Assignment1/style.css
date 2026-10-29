@@ -11,7 +11,11 @@
     --colour-table: #F5DFD5;
     --colour-border: #D6B5A5;
     --colour-accent: #E9A6A6;
+
+    --colour-03: #FFFFFF;
+    --colour-05: #E9A6A6;
 }
+
 
 
 /* page style*/
@@ -530,15 +534,35 @@ body > div[id^="topic-"] img {
 }
 
 
-/*sticker elements*/
-.tissue{
-    width: 19.33%; 
-    left: 11.5%;  
-    top: 54.5%;
+.sticker-demo {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+
+    width: 100%;
+    max-width: 500px;
+    min-height: 180px;
+
+    margin: 30px auto;
+    padding: 20px;
+
+    background-color: #F5DFD5;
+    border-radius: 12px;
 }
 
-.fabric{
-    width: 29.83%; 
-    left: 5.83%;  
-    top: 16.83%;
+.sticker-demo .sticker {
+    position: relative;
+    top: auto;
+    left: auto;
+
+    width: 100px;
+    flex-shrink: 0;
 }
+
+.sticker-demo .sticker img {
+    width: 100%;
+    height: auto;
+}
+
